@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart Grocery - Smart Inventory Management</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <a class="nav-brand" href="#home">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="10" fill="#6e70ea"/>
+        <path d="M10 14h20M13 14l2 12h10l2-12M16 14c0-2.21 1.79-4 4-4s4 1.79 4 4"
+              stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>FreshMart Grocery</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home"      class="active" onclick="setActive(this)">HOME</a></li>
+      <li><a href="#features"             onclick="setActive(this)">FEATURES</a></li>
+      <li><a href="#dashboard"            onclick="setActive(this)">DASHBOARD</a></li>
+      <li><a href="#benefits"             onclick="setActive(this)">BENEFITS</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home">
+    <div class="home-icon">
+      <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="28" cy="28" r="28" fill="rgba(255,255,255,0.15)"/>
+        <path d="M14 20h28M18 20l3 16h14l3-16M22 20c0-3.31 2.69-6 6-6s6 2.69 6 6"
+              stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="home-badge">Smart Inventory Management System</div>
+    <h1 class="home-title">Smart Inventory Management System</h1>
+    <p class="home-subtitle">FreshMart Grocery</p>
+    <div class="home-purpose-label">Project Purpose</div>
+    <p class="home-desc">
+      The purpose of this initiative is to develop a digital inventory tracking software program for FreshMart
+      which will enable the company to more easily monitor their inventory levels, sales patterns, and delivery
+      schedules from suppliers on an ongoing basis. The digital inventory system will allow us to significantly
+      lower our waste levels, reduce our overstocking of inventory, improve efficiencies in our operations via
+      alerts and analytics, and provide managers with an easy-to-use dashboard where they can view reports
+      and manage orders.
+    </p>
+    <a href="#features" class="home-cta">Discover the Solution →</a>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section id="features">
+    <div class="section-header">
+      <h2>Core Features</h2>
+      <p>Everything you need to manage your grocery inventory efficiently and intelligently.</p>
+    </div>
+    <div class="features-grid">
+
+      <!-- Card 1: Real-Time Monitoring -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5
+                     c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5
+                     5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+          </svg>
+        </div>
+        <h3>Real-Time Monitoring</h3>
+        <p>Track inventory levels, sales patterns, and supplier delivery schedules continuously with live data updates.</p>
+      </div>
+
+      <!-- Card 2: Intelligent Alerts -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4
+                     c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+          </svg>
+        </div>
+        <h3>Intelligent Alerts</h3>
+        <p>Automated notifications for low stock, expiring items, and reorder requirements — never miss a critical event.</p>
+      </div>
+
+      <!-- Card 3: Manager Dashboard -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+          </svg>
+        </div>
+        <h3>Manager Dashboard</h3>
+        <p>Easy-to-use interface for viewing reports, analytics, and managing orders — all in one place.</p>
+      </div>
+
+      <!-- Card 4: Operational Efficiency -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.81 6-4.72 7.72L13 18v4h4l-1.22-1.22
+                     C18.91 19.07 22 15.35 22 12c0-5.18-3.95-9.45-9-9.95zM11 2.05C5.95 2.55 2 6.82 2 12
+                     c0 3.35 3.09 7.07 5.22 8.78L6 22h4v-4l-2.28 1.65C5.81 18 4 15.21 4 12
+                     c0-4.08 3.05-7.44 7-7.93V2.05z"/>
+          </svg>
+        </div>
+        <h3>Operational Efficiency</h3>
+        <p>Streamlined processes that save time and reduce manual inventory management across your entire operation.</p>
+      </div>
+
+      <!-- Card 5: Waste Reduction -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M17 8C8 10 5.9 16.17 3.82 21H5.5c1-2 4-5.5 9.5-6C14 18 12 21 12 21h2
+                     c0 0 5.36-8 3-13z"/>
+          </svg>
+        </div>
+        <h3>Waste Reduction</h3>
+        <p>Minimize spoilage and overstocking through predictive inventory management and smart alerts.</p>
+      </div>
+
+      <!-- Card 6: Supplier Integration -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6
+                     c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5
+                     s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5z
+                     m-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+          </svg>
+        </div>
+        <h3>Supplier Integration</h3>
+        <p>Seamless connection with supplier schedules for optimized deliveries and on-time restocking.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DASHBOARD SECTION ===== -->
+  <section id="dashboard">
+    <div class="section-header">
+      <h2>Comprehensive Dashboard</h2>
+      <p>Monitor all aspects of inventory management and make data-driven decisions in real-time.</p>
+    </div>
+    <div class="dashboard-layout">
+
+      <!-- Left: description + checklist -->
+      <div class="dashboard-left">
+        <h2>FreshMart Dashboard</h2>
+        <p>
+          Provide managers with an intuitive interface to monitor all aspects of inventory management,
+          generate reports, and make data-driven decisions in real-time.
+        </p>
+        <ul class="checklist">
+          <li>
+            <div class="check-dot">
+              <svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg>
+            </div>
+            Live inventory tracking
+          </li>
+          <li>
+            <div class="check-dot">
+              <svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg>
+            </div>
+            Sales pattern analysis
+          </li>
+          <li>
+            <div class="check-dot">
+              <svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg>
+            </div>
+            Custom reporting tools
+          </li>
+          <li>
+            <div class="check-dot">
+              <svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg>
+            </div>
+            Order management
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: live dashboard mockup -->
+      <div class="dashboard-right">
+        <div class="dash-top-bar">
+          <span>🛒 FreshMart Dashboard</span>
+          <span style="font-size:12px;color:#9ca3af;">Live View</span>
+        </div>
+        <div class="dash-stats">
+          <div class="stat-box blue">
+            <div class="val">2,847</div>
+            <div class="lbl">Total SKUs</div>
+          </div>
+          <div class="stat-box indigo">
+            <div class="val">$45,230</div>
+            <div class="lbl">Today Sales</div>
+          </div>
+          <div class="stat-box teal">
+            <div class="val">92%</div>
+            <div class="lbl">Fill Rate</div>
+          </div>
+        </div>
+        <div class="alert-box">
+          <div class="alert-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#ea580c">
+              <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+            </svg>
+            Action Required
+          </div>
+          <div class="alert-item"><strong>Dairy Products:</strong> 23 items below reorder point</div>
+          <div class="alert-item"><strong>Produce:</strong> Expiration alerts for 15 SKUs</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS SECTION ===== -->
+  <section id="benefits">
+    <div class="section-header">
+      <h2>Business Benefits</h2>
+      <p>Real outcomes that transform your grocery operations through digital innovation.</p>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-card">
+        <div class="benefit-number">Benefit 01</div>
+        <h3>Lower Waste Levels</h3>
+        <p>Significantly reduce spoilage through real-time monitoring and predictive alerts before products expire.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-number">Benefit 02</div>
+        <h3>Reduce Overstocking</h3>
+        <p>Optimize inventory levels to free up capital and storage space by purchasing only what you need.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-number">Benefit 03</div>
+        <h3>Improve Efficiencies</h3>
+        <p>Automated alerts and analytics streamline daily operations, saving hours of manual effort each week.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-number">Benefit 04</div>
+        <h3>Manager Empowerment</h3>
+        <p>Easy dashboard access for reports and order management — make data-driven decisions confidently.</p>
+      </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span>🛒 FreshMart Grocery</span>
+          <p>Smart Inventory Management System — Transforming grocery operations through digital innovation.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Project Overview</h4>
+          <ul>
+            <li>Digital inventory tracking</li>
+            <li>Real-time monitoring</li>
+            <li>Waste reduction</li>
+            <li>Operational efficiency</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2024 FreshMart Grocery. Smart Inventory Management System. All rights reserved.
+      </div>
+    </footer>
+  </section>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
