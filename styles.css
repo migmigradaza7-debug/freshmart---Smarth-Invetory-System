@@ -1,5 +1,11 @@
+/* ===========================
+   FreshMart Grocery - styles.css
+   Smart Inventory Management
+   =========================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+/* ---------- RESET & BASE ---------- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +22,7 @@ body {
   color: #191818;
 }
 
+/* ---------- NAVBAR ---------- */
 nav {
   position: fixed;
   top: 0;
@@ -76,11 +83,13 @@ nav {
   color: #fff;
 }
 
+/* ---------- SECTIONS ---------- */
 section {
   min-height: 100vh;
   padding-top: 64px;
 }
 
+/* ---------- HOME SECTION ---------- */
 #home {
   background: linear-gradient(135deg, #1e3a5f 0%, #2c5aa0 50%, #6e70ea 100%);
   display: flex;
@@ -185,6 +194,7 @@ section {
   height: 56px;
 }
 
+/* ---------- FEATURES SECTION ---------- */
 #features {
   background: #fff;
   padding: 64px 48px 80px;
@@ -263,6 +273,7 @@ section {
   line-height: 1.65;
 }
 
+/* ---------- DASHBOARD SECTION ---------- */
 #dashboard {
   background: linear-gradient(160deg, #f0f4ff 0%, #fff 60%);
   padding: 64px 48px 80px;
@@ -419,6 +430,7 @@ section {
   color: #1e3a5f;
 }
 
+/* ---------- BENEFITS SECTION ---------- */
 #benefits {
   background: #fff;
   padding: 64px 48px 0;
@@ -467,6 +479,7 @@ section {
   line-height: 1.65;
 }
 
+/* ---------- FOOTER ---------- */
 .footer {
   background: linear-gradient(135deg, #1e3a5f, #2c5aa0);
   color: #fff;
@@ -542,6 +555,7 @@ section {
   margin: 0 auto;
 }
 
+/* ---------- RESPONSIVE NAVBAR ---------- */
 @media (max-width: 640px) {
   nav {
     padding: 0 20px;
